@@ -1,5 +1,69 @@
-.section-hero {
-  background-color: #40c057;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 9.6rem 4.8rem;
+}
+
+.section-hero .hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+  background-image: linear-gradient(to bottom right, #69db7c, #40c057);
+  padding: 0 6.4rem 0 4.8rem;
+  justify-items: center;
+  border-radius: 11px;
+}
+.section-hero .hero-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.section-hero .hero-text {
+  font-size: 4.8rem;
+  letter-spacing: -1.4px;
+  font-weight: 700;
+  color: #0d2611;
+  margin-top: 4.8rem;
+}
+.section-hero .btn-hero:link,
+.section-hero .btn-hero:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: #0d2611;
+  color: #fff;
+  padding: 1.4rem 2.8rem;
+  align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  border-radius: 11px;
+  transition: all 0.3s;
+}
+.section-hero .btn-hero:hover,
+.section-hero .btn-hero:active {
+  background: none;
+  box-shadow: inset 0 0 0 2px #0d2611;
+  color: #0d2611;
+}
+.section-hero .hero-img {
+  width: 100%;
+  border-radius: 11px;
+  transform: scale(1.15);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.07);
 }
 
 /*# sourceMappingURL=style.css.map */
